@@ -8,5 +8,5 @@
 - @games.each do |game|
   %tr
     %td= link_to game.name, game
-    %td= game.created_at
+    %td= game.format_time(game.created_at)
   %br
