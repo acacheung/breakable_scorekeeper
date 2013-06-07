@@ -1,0 +1,13 @@
+%p#error
+  = flash[:error]
+
+= link_to 'Track a new game', new_game_path
+
+%table
+  %tr
+    %th Name
+
+- @games.each do |game|
+  %tr
+    %td= link_to game.name, game
+  %br
