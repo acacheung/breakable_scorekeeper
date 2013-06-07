@@ -4,6 +4,6 @@ class Game < ActiveRecord::Base
   validates_presence_of :name
 
   def format_time(created_at)
-    created_at.strftime("%b%e %l%P")
+    created_at.strftime('%-m/%-d/%y')
   end
 end

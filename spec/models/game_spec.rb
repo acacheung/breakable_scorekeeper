@@ -6,4 +6,6 @@ describe Game do
     game.name = ''
     expect(game).to_not be_valid
   end
+
+  it 'will display when the game was created in a nice format'
 end
