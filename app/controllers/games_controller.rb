@@ -15,4 +15,8 @@ class GamesController < ApplicationController
       render :action => 'new'
     end
   end
+
+  def show
+    @game = Game.find(params[:id])
+  end
 end
