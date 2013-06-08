@@ -6,7 +6,7 @@ describe 'for game rounds' do
     click_link 'Track a new game'
     fill_in 'Name', :with => 'Mahjong'
     click_button 'Done'
-    click_link 'Add a new round'
+    click_button 'Add new round'
     page.should have_content('Round 1')
   end
 

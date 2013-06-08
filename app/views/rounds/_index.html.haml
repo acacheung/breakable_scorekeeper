@@ -1,0 +1,7 @@
+- counter = 1
+- @game.rounds.each do |round|
+  %p
+    Round
+    %span
+      = "#{counter}"
+      - counter += 1 # controller and send info out to view
