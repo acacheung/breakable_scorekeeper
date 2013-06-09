@@ -24,6 +24,8 @@ gem 'jquery-rails'
 
 gem 'haml'
 
+gem 'easy_auth'
+
 group :development do
   gem 'better_errors'
 end
