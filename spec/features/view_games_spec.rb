@@ -14,11 +14,9 @@ describe 'add games' do
     click_link 'Track a new game'
     fill_in 'Name', :with => 'Mahjong1'
     click_button 'Done'
-    visit root_path
     click_link 'Track a new game'
     fill_in 'Name', :with => 'Mahjong2'
     click_button 'Done'
-    visit root_path
     page.should have_content(/Mahjong2.*Mahjong1/)
   end
 end
