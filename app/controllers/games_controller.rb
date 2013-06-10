@@ -18,5 +18,6 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    @round = @game.rounds.build
   end
 end
