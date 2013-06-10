@@ -7,7 +7,11 @@
 
 - @games.each do |game|
   = link_to(game) do
-    %p= game.name
-    %p= game.format_time(game.created_at)
-    %p= game.players.pluck(:name).join(', ')
+    %span
+      = game.name
+    %span
+      = game.format_time(game.created_at)
+    %span
+      = game.players.pluck(:name).join(', ')
+  %br
   %br
