@@ -10,7 +10,8 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(params[:game])
     if @game.save
-      redirect_to root_path, :notice => 'Game created'
+      @players = Player.new(@number_of_players)
+      redirect_to new_game_player_path
     else
       render :action => 'new'
     end

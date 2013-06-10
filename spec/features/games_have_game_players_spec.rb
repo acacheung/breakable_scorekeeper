@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe 'adding game players' do
+
   it 'can see the game players that belong to each game on game index'
   #   visit root_path
   #   click_link 'Track a new game'

@@ -8,4 +8,6 @@ describe Game do
   end
 
   it 'will display when the game was created in a nice format'
+
+  it 'number of game players equals the number of names of players'
 end

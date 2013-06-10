@@ -1,5 +1,5 @@
 class Game < ActiveRecord::Base
-  attr_accessible :name, :created_at
+  attr_accessible :name, :number_of_players
 
   validates_presence_of :name
 
