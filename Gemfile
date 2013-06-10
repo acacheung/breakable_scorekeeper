@@ -23,7 +23,7 @@ end
 gem 'jquery-rails'
 
 gem 'haml'
-
+gem 'simple_form'
 gem 'easy_auth'
 
 group :development do
