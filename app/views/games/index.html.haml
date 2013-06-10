@@ -1,7 +1,7 @@
-%p#error
-  = flash[:error]
+/ %p#error
+/   = flash[:error]
 
-= link_to 'Track a new game', new_game_path
+= link_to 'Track a new game', new_game_path, :class => 'track_new_game'
 
 %h1 My tracked games:
 

@@ -1,7 +1,7 @@
 class Game < ActiveRecord::Base
   attr_accessible :name, :number_of_players
 
-  validates_presence_of :name
+  validates_presence_of :name, :number_of_players
 
   has_many :rounds
   has_many :players
