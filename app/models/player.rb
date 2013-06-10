@@ -1,5 +1,11 @@
 class Player < ActiveRecord::Base
-  def new
-    @player = Player.new
+  attr_accessible :game_id, :number_of_players
+
+  belongs_to :game
+
+  @players = []
+
+  def add_player
+    @players << @player
   end
 end

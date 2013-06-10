@@ -7,7 +7,6 @@ class RoundsController < ApplicationController
 
   def new
     @round = @game.rounds.new
-    # @game = @rounds.game
   end
 
   def create
