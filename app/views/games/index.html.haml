@@ -6,7 +6,8 @@
 %h1 My tracked games:
 
 - @games.each do |game|
-  %tr
-    %td= link_to game.name, game
-    %td= game.format_time(game.created_at)
+  = link_to(game) do
+    %p= game.name
+    %p= game.format_time(game.created_at)
+    %p= game.players.pluck(:name).join(', ')
   %br
