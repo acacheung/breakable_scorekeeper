@@ -5,17 +5,6 @@ class PlayersController < ApplicationController
     @players = @game.players.all
   end
 
-  def new
-    @player = @game.players.new(@number_of_players)
-  end
-
-  def create
-    @player = @game.players.new(params[:player])
-    if @player.save
-      redirect_to @game
-    end
-  end
-
   private
 
     def load_game

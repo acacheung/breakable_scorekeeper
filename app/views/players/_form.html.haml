@@ -1,4 +1,0 @@
-= simple_form_for @game do |f|
-  = @game.number_of_players.times do |count|
-    = f.input :name, :label => "Player #{count + 1}"
-  = f.submit 'Enter'

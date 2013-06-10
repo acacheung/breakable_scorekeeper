@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe GamePlayer do
+describe Player do
   it 'will not submit if there are no game players'
   #   game = Game.new
   #   game.name = 'Mahjong'

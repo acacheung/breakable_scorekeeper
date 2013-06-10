@@ -1,7 +1,5 @@
-- counter = 1
-- @game.rounds.each do |round|
+- @game.rounds.each_with_index do |round, index|
   %p
     Round
     %span
-      = "#{counter}"
-      - counter += 1 # controller and send info out to view
+      = "#{index + 1}"

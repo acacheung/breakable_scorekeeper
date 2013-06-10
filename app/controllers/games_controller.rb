@@ -5,13 +5,15 @@ class GamesController < ApplicationController
 
   def new
     @game = Game.new
+    5.times do |count|
+      @player = @game.players.new
+    end
   end
 
   def create
     @game = Game.new(params[:game])
     if @game.save
-      # @players = @game.players.build(@number_of_players)
-      redirect_to game_path
+      redirect_to game_path(@game)
     else
       render :action => 'new'
     end

@@ -1,4 +1,8 @@
 = simple_form_for @game do |f|
   = f.input :name, :label => 'What is the name of your game?'
-  = f.input :number_of_players, :label => 'How many players?'
+  %h1 Name your players (up to 5)
+  - counter = 1
+  = f.simple_fields_for :players do |l|
+    = l.input :name, :label => "Player #{counter}:"
+    - counter += 1
   = f.submit 'Enter'
