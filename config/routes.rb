@@ -2,7 +2,7 @@ BreakableScorekeeper::Application.routes.draw do
 
   resources :games, :only => [:index, :new, :create, :show] do
     resources :rounds, :only => [:index, :create]
-    resources :players, :only => [:index, :new, :create]
+    resources :players, :only => [:index]
   end
 
   # The priority is based upon order of creation:
