@@ -1,3 +1,2 @@
-= form_for([@game, @round]) do |f|
-  .actions
-    = f.submit 'Add new round'
+= simple_form_for([@game, @round]) do |f|
+  = f.submit 'Add new round'
