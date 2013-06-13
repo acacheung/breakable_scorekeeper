@@ -3,15 +3,11 @@
 
 = link_to 'Track a new game', new_game_path, :class => 'track_new_game'
 
-%h1 My tracked games:
+%h2
+  = "#{@games.count} games tracked:"
 
 - @games.each do |game|
-  = link_to(game) do
-    %span
-      = game.name
-    %span
-      = game.format_time(game.created_at)
-    %span
-      = game.players.pluck(:name).join(', ')
-  %br
-  %br
+  = link_to(game, :class => 'index_game_row') do
+    %span.index_game_created_at= "#{game.format_time(game.created_at)}"
+    %span.index_game_name= game.name
+    %span.index_game_players= "#{game.players.pluck(:name).join(', ')}" # [0..30].gsub(/\w+$/, '...')

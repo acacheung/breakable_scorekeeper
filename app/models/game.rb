@@ -9,6 +9,6 @@ class Game < ActiveRecord::Base
   accepts_nested_attributes_for :players, :reject_if => lambda { |player| player[:name].blank? }
 
   def format_time(created_at)
-    created_at.strftime('%-m/%-d/%y')
+    created_at.strftime('%-m/%-d')
   end
 end

@@ -18,7 +18,7 @@ class ScoresController < ApplicationController
 
   private
     def load_game_round
-      @game = Game.find(params[:game_id])
-      @round = @game.rounds.find(params[:round_id])
+      @round = Round.find(params[:round_id])
+      @game = @round.game
     end
 end

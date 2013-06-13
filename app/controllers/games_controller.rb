@@ -22,5 +22,8 @@ class GamesController < ApplicationController
   def show
     @game = Game.find(params[:id])
     @round = @game.rounds.build
+    @game.players.each do |player|
+      @round.scores.build(:player_id => player.id)
+    end
   end
 end

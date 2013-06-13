@@ -24,6 +24,7 @@ gem 'compass-rails'
 gem 'haml'
 gem 'simple_form'
 gem 'easy_auth'
+gem 'pry-rails'
 
 group :development do
   gem 'better_errors'

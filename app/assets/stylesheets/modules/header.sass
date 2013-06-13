@@ -1,11 +1,17 @@
 @import base
 
 .header
-  +background-image(linear-gradient(left top, lighten($gray, 10%), $gray))
+  background-color: $gray
 
 .logo
-  font-size: 1.5em
-  text-decoration: none
+  display: block
+  padding:
+    top: 8px
+    bottom: 8px
+  font:
+    size: 1.5em
+    weight: 700
+  text:
+    decoration: none
+    align: center
   color: $white
-  &:hover
-    color: rgba($white, .8)

@@ -2,4 +2,6 @@
   %p
     Round
     %span
-      = "#{index + 1}"
+      = "#{index + 1}:"
+      - round.scores.each do |score|
+        = score.score

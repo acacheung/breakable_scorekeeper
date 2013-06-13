@@ -2,26 +2,37 @@
 @import compass/css3
 
 $gray: #333333
+$l-gray: #E8E8E8
+$blue: #00B2EE
+$teal: #50C9C6
+$salmon: #FFA07A
+$pink: #EE3A8C
 $white: #FFFFFF
+$midnight: #1e2328
+$black: #000000
 $helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
 
 body
+  background-color: $l-gray
+  font:
+    family: 'Open Sans'
+    weight: 300
   line-height: 1.5
-  // +background-image(linear-gradient(left top, #323232, #101010))
-  // color: #e3e2e2
-  font-family: $helvetica
+  // color: rgba($white, .85)
+
 h1
   font-size: 1.5em
 
 a
   text-decoration: none
+  // color: rgba($white, .85)
 
 .wrap
   max-width: 700px
   @media (max-width: 800px)
     margin:
-      right: 50px
-      left: 50px
+      right: 5%
+      left: 5%
   @media (min-width: 800px)
     margin:
       right: auto
